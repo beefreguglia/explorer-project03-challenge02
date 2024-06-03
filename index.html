@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="/images/logo.svg" alt="mentoria logo">
+      </header>
+      <form>
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Informações pessoais</legend>
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="last-name">Sobrenome</label>
+                <input 
+                  type="text" 
+                  id="last-name" 
+                  name="last-name" 
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="last-name">Email<span>(digite um email válido)</span></label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Informações do mentor</legend>
+              <div class="input-wrapper">
+                <label for="name">Selecione quem foi o seu mentor</label>
+                <select 
+                  id="mentor-name" 
+                  name="mentor-name" 
+                  required
+                >
+                  <option value="nome1">Nome 1</option>
+                  <option value="nome2">Nome 2</option>
+                  <option value="nome3">Nome 3</option>
+                  <option value="nome4">Nome 4</option>
+                </select>
+            </div>
+            <div class="input-wrapper">
+              <label for="name">Feedback sobre o mentor</label>
+              <textarea 
+                id="mentor-name" 
+                name="mentor-name" 
+                required
+              ></textarea>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="have-more-questions" name="have-more-questions" />
+            <label for="have-more-questions">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+          </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Agendando próxima mentoria</legend>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-date">Data</label>
+                <input type="date" id="event-date" name="event-date" />
+              </div>
+              <div class="input-wrapper">
+                <label for="event-begin-hour">Das</span></label>
+                <input type="time" id="event-begin-hour" name="event-begin-hour" />
+              </div>
+              <div class="input-wrapper">
+                <label for="event-end-hour">Até</span></label>
+                <input type="time" id="event-end-hour" name="event-end-hour" />
+              </div>
+            </div>  
+          </div>
+        </fieldset>
+      </form>
+      <footer>
+        <button>Salvar</button>
+      </footer>
+    </div>
+  </body>
+</html>
